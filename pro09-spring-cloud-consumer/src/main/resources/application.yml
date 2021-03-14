@@ -1,2 +1,9 @@
 server:
   port: 4000
+spring:
+  application:
+    name: atguigu-consumer                      # 在Spring Cloud环境下开发，每一个微服务工程都要设置一个应用名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka # 注册到Eureka

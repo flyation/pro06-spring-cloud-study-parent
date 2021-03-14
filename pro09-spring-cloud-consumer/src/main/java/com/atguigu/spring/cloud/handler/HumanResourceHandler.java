@@ -11,10 +11,13 @@ public class HumanResourceHandler {
     @Autowired
     private RestTemplate restTemplate;
 
-    @RequestMapping("/consumer/get/employee")
+    @RequestMapping("/consumer/ribbon/get/employee")
     public Employee getEmployeeRemote() {
         // 远程调用方法的主机地址
-        String host = "http://localhost:1000";
+//        String host = "http://localhost:1000";
+        // 将远程微服务调用地址从ip+port改为微服务名称
+        String host = "http://atguigu-provider";
+
         // 远程调用方法的具体 URL 地址
         String url = "/provider/get/employee/remote";
         return restTemplate.getForObject(host + url, Employee.class);
