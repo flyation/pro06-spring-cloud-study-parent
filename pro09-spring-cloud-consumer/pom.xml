@@ -23,13 +23,13 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-        <!-- eureka客户端 -->
+        <!-- Eureka客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
-        <!-- ribbon -->
+        <!-- Ribbon -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
