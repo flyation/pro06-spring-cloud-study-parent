@@ -12,6 +12,7 @@
         <module>pro08-spring-cloud-prodiver</module>
         <module>pro09-spring-cloud-consumer</module>
         <module>pro10-spring-cloud-eureka</module>
+        <module>pro09-spring-cloud-feign-consumer</module>
     </modules>
     <packaging>pom</packaging>
 
